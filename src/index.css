@@ -42,5 +42,14 @@
   }
   body {
     @apply bg-background text-foreground;
+    background: radial-gradient(circle at top, hsl(217.2, 91.2%, 15%) 0%, hsl(var(--background)) 50%);
+    min-height: 100vh;
   }
+}
+
+.card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
