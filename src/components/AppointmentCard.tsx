@@ -9,9 +9,9 @@ interface AppointmentCardProps {
 
 export const AppointmentCard = ({ title, time, date }: AppointmentCardProps) => {
   return (
-    <Card className="p-4 backdrop-blur-md bg-secondary/30 hover:bg-secondary/40 border-secondary/50 transition-all duration-300 cursor-pointer animate-fade-in">
+    <Card className="p-4 backdrop-blur-md bg-gradient-to-br from-secondary/30 via-secondary/20 to-secondary/10 hover:bg-secondary/40 border-secondary/50 transition-all duration-300 cursor-pointer animate-fade-in">
       <div className="flex items-start gap-4">
-        <div className="p-2 bg-primary/10 backdrop-blur-sm rounded-lg">
+        <div className="p-2 bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm rounded-lg">
           <CalendarClock className="h-6 w-6 text-primary" />
         </div>
         <div className="flex-1">
