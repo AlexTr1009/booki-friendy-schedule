@@ -2,7 +2,7 @@ import { Settings, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState, useEffect } from "react";
 
-const Header = () => {
+export const Header = () => {
   const [location, setLocation] = useState<string>("");
 
   useEffect(() => {
@@ -44,5 +44,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;
