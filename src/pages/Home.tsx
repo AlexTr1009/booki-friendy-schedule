@@ -1,6 +1,7 @@
 import { AppointmentCard } from "@/components/AppointmentCard";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
+import { Header } from "@/components/Header";
 
 const Home = () => {
   const appointments = [
@@ -23,10 +24,12 @@ const Home = () => {
 
   return (
     <div className="p-4 pb-24 max-w-md mx-auto">
-      <header className="mb-8">
+      <Header />
+      
+      <section className="mb-8">
         <h1 className="text-2xl font-bold">Welcome back</h1>
         <p className="text-muted-foreground mt-1">Manage your appointments</p>
-      </header>
+      </section>
 
       <Button className="w-full mb-8" size="lg">
         <Plus className="mr-2 h-4 w-4" /> Book Appointment
